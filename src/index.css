@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SliderStyles.css */
+
+.slick-dots li button:before {
+    color:#E5745D;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #E5745D;
+  }
