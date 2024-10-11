@@ -1,0 +1,58 @@
+[
+    {
+    "id":1,
+    "title":"TODO Appliction ",
+    "len":"Javascript, HTML, CSS",
+    
+    "des":"Developed a fully functional To-Do application using HTML, CSS, and JavaScript. The app allows users to create, manage, and track tasks seamlessly. Leveraged JavaScript's LocalStorage to ensure data persistence, overcoming challenges related to setting and retrieving items. This project showcases my proficiency in front-end development, problem-solving skills, and ability to create user-friendly applications with efficient data management.",
+    "sour":"https://github.com/shahariar270/todo",
+    "op" :"https://github.com/shahariar270/todo",
+    "img":"https://i.ibb.co.com/ZG2kVvM/Screenshot-2024-10-09-114547.png"
+    },{
+        "id":2,
+        "title":"Weather App",
+        "len":"Javascript, HTML, CSS",
+        "des":"Developed a YouTube video downloader using React.js, Tailwind CSS, and JavaScript. The app fetches video data from a third-party API, enabling seamless downloads. Implemented smart error handling and validation checks to overcome download bugs. Utilized React.js for efficient state management and Tailwind CSS for responsive design. Demonstrates expertise in front-end development, API integration, and problem-solving.",
+        "sour":"https://github.com/shahariar270/Weather",
+    "op" :"https://shahariar270.github.io/Weather/",
+    "img":"https://i.ibb.co.com/Q7g1d7Q/Screenshot-2024-10-09-113847.png"
+    
+    },{
+        "id":3,
+        "title":"Youtube Video Download",
+        "len":"React JS, Tailwind CSS",
+        "des":"Developed a YouTube video downloader using React.js, Tailwind CSS, and JavaScript. Fetches video data from a third-party API for seamless downloads. Implemented smart error handling and validation checks to overcome bugs. Utilized React.js for efficient state management and Tailwind CSS for responsive design. Demonstrates expertise in front-end development, API integration, and problem-solving.",
+        "sour":"https://github.com/shahariar270/wiltube",
+        "op" :"https://wiltube.netlify.app/",
+        "img":"https://i.ibb.co.com/Y0D2MHd/Screenshot-2024-10-09-114738.png"
+        
+    },
+    {
+        "id":4,
+        "title":"TODO Appliction ",
+        "len":"Javascript, HTML, CSS",
+        
+        "des":"Developed a fully functional To-Do application using HTML, CSS, and JavaScript. The app allows users to create, manage, and track tasks seamlessly. Leveraged JavaScript's LocalStorage to ensure data persistence, overcoming challenges related to setting and retrieving items. This project showcases my proficiency in front-end development, problem-solving skills, and ability to create user-friendly applications with efficient data management.",
+        "sour":"https://github.com/shahariar270/todo",
+        "op" :"https://github.com/shahariar270/todo",
+        "img":"https://i.ibb.co.com/ZG2kVvM/Screenshot-2024-10-09-114547.png"
+        },{
+            "id":5,
+            "title":"Weather App",
+            "len":"Javascript, HTML, CSS",
+            "des":"Developed a weather application using JavaScript, HTML, and CSS. The app fetches current weather data from the OpenWeatherMap API and displays it in a user-friendly format. Utilized JavaScript's Fetch API to handle GET requests, ensuring seamless data retrieval and dynamic updates. This project showcases my proficiency in front-end development, API integration, and data visualization.",
+            "sour":"https://github.com/shahariar270/Weather",
+        "op" :"https://shahariar270.github.io/Weather/",
+        "img":"https://i.ibb.co.com/Q7g1d7Q/Screenshot-2024-10-09-113847.png"
+        
+        },{
+            "id":6,
+            "title":"Youtube Video Download",
+            "len":"React JS, Tailwind CSS",
+            "des":"Developed a YouTube video downloader using React.js, Tailwind CSS, and JavaScript. Fetches video data from a third-party API for seamless downloads. Implemented smart error handling and validation checks to overcome bugs. Utilized React.js for efficient state management and Tailwind CSS for responsive design. Demonstrates expertise in front-end development, API integration, and problem-solving.",
+            "sour":"https://github.com/shahariar270/wiltube",
+            "op" :"https://wiltube.netlify.app/",
+            "img":"https://i.ibb.co.com/Y0D2MHd/Screenshot-2024-10-09-114738.png"
+            
+        }
+    ]
