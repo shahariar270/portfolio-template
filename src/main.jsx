@@ -7,7 +7,6 @@ import {
 import "./index.css";
 import App from "./App";
 
-import Service from "./Service";
 
 const router = createBrowserRouter([
   {
