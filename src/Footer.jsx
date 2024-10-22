@@ -68,7 +68,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="text-center">
-        <span className='text-sm sm:text-base text-[#fff]'>Copyright © 2023 Design By Shahariar. All rights reserved.</span>
+        <span className='md:text-xl text-[12px] text-[#fff]'>Copyright © 2023 Design By Shahariar. All rights reserved.</span>
       </div>
     </div>
   )

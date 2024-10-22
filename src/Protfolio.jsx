@@ -24,7 +24,7 @@ const Protfolio = () => {
         <img src={line} alt="line" className="mr-2" />
         <h4 className="text-lg">Recent Projects</h4>
       </div>
-      <h1 className='text-center text-5xl text-info font-medium mt-12'>My Work Example</h1>
+      <h1 className='text-center text-3xl md:text-5xl text-info font-medium mt-12'>My Work Example</h1>
 
       {/* Tabs */}
       <div className="flex justify-center mt-8 space-x-4">
@@ -44,15 +44,15 @@ const Protfolio = () => {
       </div>
 
       {/* Tab content */}
-      <div className="grid grid-cols-2 gap-4 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
         {chunkedData[activeTab - 1] &&
           chunkedData[activeTab - 1].map((item) => (
-            <div className="w-[470px] h-[520px] m-auto" key={item.id}>
-              <img className='w-[470px] h-[420px]' src={item.url} alt={item.title} />
-             <div className="text-center  h-[100px] 
+            <div className="h-[250px] md:w-[470px] md:h-[520px] m-auto" key={item.id}>
+              <img className='h-[210px] md:w-[470px] md:h-[520px]' src={item.url} alt={item.title} />
+             <div className="text-center  h-[50px] md:h-[100px] 
                bg-info flex items-center justify-start text-[#fff] 
               "> 
-               <h2 className="font-medium  text-2xl font p-2   ">{item.title}</h2>
+               <h2 className="font-medium text-xl  md:text-2xl font p-2   ">{item.title}</h2>
           
                </div>
                

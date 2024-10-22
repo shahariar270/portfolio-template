@@ -44,21 +44,21 @@ const Client = () => {
         <img src={line} alt="line" className="mr-2" />
         <h4 className="text-lg">Client Testimonial</h4>
       </div>
-      <h1 className="text-5xl text-center font-ff font-semibold mt-5 text-info  ">Feedback From Client</h1>
+      <h1 className="text-2xl  md:text-5xl text-center font-ff font-semibold mt-5 text-info  ">Feedback From Client</h1>
     <div className="text-center mt-7">
     <Slider  {...settings}>
         {/* start */}
         <div>
           <div className="h-1 w-[500px] bg-hots "></div>
-            <p className='px-10 py-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+            <p className='px-10 py-7 text-sm md:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry.</p>
           
          <br />
          <div className="pt-5 pl-14 flex   ">
-            <img src={mask} alt="" />
+            <img className='md:h-full h-[90px]' src={mask} alt="" />
             <div className="pl-7 pt-3 items-start ">
-                <h4 className=" text-xl font-ff font-semibold text-info ">Michale Doie</h4>
-                <h5 className="">Product Designer</h5>
+                <h4 className=" text-sm md:text-xl font-ff font-semibold text-info ">Michale Doie</h4>
+                <h5 className="text-[10px] md:text-sm ">Product Designer</h5>
                 <img src={star} alt="" />
             </div>
          </div>
@@ -69,15 +69,15 @@ const Client = () => {
            {/* start */}
            <div>
           <div className="h-1 w-[500px] bg-hots "></div>
-            <p className='px-10 py-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+            <p className='px-10 py-7 text-sm md:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry.</p>
           
          <br />
          <div className="pt-5 pl-14 flex   ">
-            <img src={mask} alt="" />
+            <img className='md:h-full h-[90px]' src={mask} alt="" />
             <div className="pl-7 pt-3 items-start ">
-                <h4 className=" text-xl font-ff font-semibold text-info ">Adam Smith</h4>
-                <h5 className="">Designer</h5>
+                <h4 className=" text-sm md:text-xl font-ff font-semibold text-info ">Michale Doie</h4>
+                <h5 className="text-[10px] md:text-sm ">Product Designer</h5>
                 <img src={star} alt="" />
             </div>
          </div>
@@ -87,15 +87,15 @@ const Client = () => {
            {/* start */}
            <div>
           <div className="h-1 w-[500px] bg-hots "></div>
-            <p className='px-10 py-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+            <p className='px-10 py-7 text-sm md:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry.</p>
           
          <br />
          <div className="pt-5 pl-14 flex   ">
-            <img src={mask} alt="" />
+            <img className='md:h-full h-[90px]' src={mask} alt="" />
             <div className="pl-7 pt-3 items-start ">
-                <h4 className=" text-xl font-ff font-semibold text-info ">Michale Doie</h4>
-                <h5 className="">Product Designer</h5>
+                <h4 className=" text-sm md:text-xl font-ff font-semibold text-info ">Michale Doie</h4>
+                <h5 className="text-[10px] md:text-sm ">Product Designer</h5>
                 <img src={star} alt="" />
             </div>
          </div>
@@ -105,15 +105,15 @@ const Client = () => {
            {/* start */}
            <div>
           <div className="h-1 w-[500px] bg-hots "></div>
-            <p className='px-10 py-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+            <p className='px-10 py-7 text-sm md:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry.</p>
           
          <br />
          <div className="pt-5 pl-14 flex   ">
-            <img src={mask} alt="" />
+            <img className='md:h-full h-[90px]' src={mask} alt="" />
             <div className="pl-7 pt-3 items-start ">
-                <h4 className=" text-xl font-ff font-semibold text-info ">Adam Smith</h4>
-                <h5 className="">Designer</h5>
+                <h4 className=" text-sm md:text-xl font-ff font-semibold text-info ">Michale Doie</h4>
+                <h5 className="text-[10px] md:text-sm ">Product Designer</h5>
                 <img src={star} alt="" />
             </div>
          </div>
@@ -124,15 +124,15 @@ const Client = () => {
            {/* start */}
            <div>
           <div className="h-1 w-[500px] bg-hots "></div>
-            <p className='px-10 py-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+            <p className='px-10 py-7 text-sm md:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry.</p>
           
          <br />
          <div className="pt-5 pl-14 flex   ">
-            <img src={mask} alt="" />
+            <img className='md:h-full h-[90px]' src={mask} alt="" />
             <div className="pl-7 pt-3 items-start ">
-                <h4 className=" text-xl font-ff font-semibold text-info ">Michale Doie</h4>
-                <h5 className="">Product Designer</h5>
+                <h4 className=" text-sm md:text-xl font-ff font-semibold text-info ">Michale Doie</h4>
+                <h5 className="text-[10px] md:text-sm ">Product Designer</h5>
                 <img src={star} alt="" />
             </div>
          </div>
@@ -142,15 +142,15 @@ const Client = () => {
            {/* start */}
            <div>
           <div className="h-1 w-[500px] bg-hots "></div>
-            <p className='px-10 py-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+            <p className='px-10 py-7 text-sm md:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry.</p>
           
          <br />
          <div className="pt-5 pl-14 flex   ">
-            <img src={mask} alt="" />
+            <img className='md:h-full h-[90px]' src={mask} alt="" />
             <div className="pl-7 pt-3 items-start ">
-                <h4 className=" text-xl font-ff font-semibold text-info ">Adam Smith</h4>
-                <h5 className="">Designer</h5>
+                <h4 className=" text-sm md:text-xl font-ff font-semibold text-info ">Michale Doie</h4>
+                <h5 className="text-[10px] md:text-sm ">Product Designer</h5>
                 <img src={star} alt="" />
             </div>
          </div>

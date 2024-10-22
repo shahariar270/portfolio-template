@@ -27,20 +27,20 @@ const Service = () => {
   };
 
   return (
-    <div id='service' className="mt-20 w-[70%] m-auto">
+    <div id='service' className="mt-40 md:mt-20 w-[70%] m-auto">
       <div className="m-auto h-2 text-[#E5745D] flex flex-row text-center justify-center">
         <img src={line} alt="" />
-        <h4 className="text-lg">MY SERVICES</h4>
+        <h4 className=" text-sm md:text-lg">MY SERVICES</h4>
       </div>
 
-      <div className="text-center text-5xl font-bold font-mono mt-5">
+      <div className="text-center text-2xl md:text-5xl font-bold font-mono mt-5">
         <h1>Provide Wide Range of <br /> Digital Services</h1>
 
-        <div className='flex flex-wrap mt-5'>
+        <div className='grid grid-cols-1 md:grid-cols-3 mt-5 m-a'>
           {data.map(item => (
-            <div key={item.id} className="w-[30%] h-[60`0px] grid p-7 hover:shadow-lg hover:shadow-zinc-800">
+            <div key={item.id} className="w-[100%] md:w-[30%] h-[60`0px] grid p-7">
               <img className="w-16 h-16" src={item.img} alt={item.title} />
-              <p className='text-lg font-bold text-[#00413D]'>{item.title}</p>
+              <p className='text-sm md:text-lg  font-bold text-[#00413D]'>{item.title}</p>
               <p style={openStates[item.id] ? null : para} className='text-sm text-primary'>
                 {item.description}
               </p>

@@ -12,14 +12,14 @@ const About = () => {
   return (
     <div id="about" className="mt-10 w-[70%] m-auto  ">
  
- <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
+ <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4 ">
 
   <div className="grid grid-cols-2 gap-4 ">
     <div>
-      <img className=' w-[350px] h-[491px] ' src={myphotos} alt="" />
+      <img className='w-[350px] h-[350px] md:h-[491px] ' src={myphotos} alt="" />
     </div>
     <div className=" grid grid-rows-2 gap-4 ">
-      <img className=' w-[170px] h-[246px] ' src={ai} alt="" />
+      <img className=' w-[170px] h-[150px] md:h-[246px] ' src={ai} alt="" />
       <img src={ex} alt="" />
     </div>
 
@@ -32,10 +32,10 @@ const About = () => {
       </div>
 
 <div className="">
-  <h3 className='text-4xl mt-10 text-info font-ff font-bold '>I Enjoy Solving Problems <br />
+  <h3 className='text-2xl md:text-4xl  mt-10 text-info font-ff font-bold '>I Enjoy Solving Problems <br />
   With Scalable Solutions</h3>
 
-  <span className=" mt-10 font-ff text-info text-[16px] ">
+  <span className=" mt-10 font-ff text-info text-sm md:text-[16px]  ">
     I am a software engineer with a passion for building scalable and efficient solutions. I have a strong
     foundation in computer science and a keen eye for detail. 
     <br /> <br />
@@ -55,7 +55,7 @@ const About = () => {
 
  </div>
 
- <div className="m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+ <div className="m-auto mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
     <Progress percentage='90' value='HTML5 & CSS3' />
     <Progress percentage='80' value='Javascript' />
     <Progress percentage='75'  value='React js'/>

@@ -1,40 +1,34 @@
 import group from './assets/Group.png'
 import profile from './assets/profile.jpg'
 
-const Home = () => {
+
+
+const HeroSection = () => {
   return (
-    <div id='home' className="container   bg-[#00413D] h-[570px] m-auto relative
-    ">
-      <img className=' absolute left-[-220px] opacity-5 ' src={group} alt="" />
+    <div id='home' className=" relative w-[90%] m-auto h-[550px] bg-teal-900 ">
+      <img src={group} className=' opacity-5  absolute left-[-190px]' alt="" />
 
-      <div className="  flex relative justify-between  ">
-      
-        <div className=" flex flex-col absolute top-[120px] left-[200px] text-[#fff] z-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 absolute top-[0px] m-auto justify-between w-[100%] ">
+
+      <div className="flex flex-col w-[100%] h-full justify-center p-10 ">
+        <h1 className=" text-3xl  md:text-7xl font-bold text-white">Hello! <br />
+        I Am Shahariar </h1>
+        <span className=' mt-7 text-sm lg:w-full text-[#fff]  md:w-[250px]'>I’am freelance <b className='text-white'>Web Developer</b> based in Bangladesh who loves   to craft attractive
         
-
-          <h1 className='lg:text-6xl font-mono md:text-3xl   '>Hello, <br className=' mt-3 ' /> I am Shahariar Islam </h1>
-
-          <span className='text-sm lg:w-full text-xnxx  md:w-[250px]'>I’am freelance <b className='text-white'>Web Developer</b> based in Bangladesh who loves to craft attractive
-            <br />
              Developer experiences for the web</span>
-             
 
-<button className='w-2/6 mt-[20px]  bg-[#E5745D] text-[#fff] py-5 px-7 rounded border
+             <button className='w-[150px] mt-[20px]  bg-[#E5745D] text-[#fff] py-5 px-7 rounded border
 md:w-[43%]
 border-white outline outline-[#E5745D]' >Contact Me</button>
-
-            
-       
-        </div>
-
-        <div className=" absolute left-[60%]  ">
-          <img className='w-[600px] h-[570px] ' src={profile} alt="" />
-        </div>
       </div>
 
-
-    </div>
-  )
+      <div className="w-[100%] flex justify-end">
+        <img src={profile} alt="" className="md:h-[550px] md:w-[90%] h-[100%] w-[100%] " />
+      </div>
+      
+</div>
+      </div>
+  );
 }
 
-export default Home
+export default HeroSection;

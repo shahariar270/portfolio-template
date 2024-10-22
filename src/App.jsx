@@ -11,12 +11,18 @@ import Blog from "./Blog"
 import Footer from "./Footer"
 
 
+
+
 function App() {
 
 
+
+
   return (
-    <>
-     <Navbar/>
+    <div>
+  
+ 
+    <Navbar/>
     <Home/>
     <Service/>
     <About/>
@@ -26,8 +32,8 @@ function App() {
     <Contect/>
     <Blog/>
     <Footer/>
-
-    </>
+    </div>
+ 
   )
 }
 
