@@ -8,8 +8,16 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--color-secondary);
+        background-color: var(--color-primary);
         z-index: 1000;
+    }
+    &--logo {
+        color: var(--text-white);
+        font-size: 20px;
+        font-weight: 600;
+        &:hover {
+            color: var(--text-white-hover);
+        }
     }
 
     &--menu {
@@ -22,7 +30,6 @@
             p {
                 margin: 0; // instead of padding 0, use margin
                 color: var(--text-white);
-                font-weight: 500;
                 font-weight: 600;
                 &:hover {
                     color: var(--text-white-hover);

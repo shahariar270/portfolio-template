@@ -20,6 +20,7 @@ export const Header = () => {
       <div className="st-portfolio--theme">
         <Button
         label={'theme change'}
+        variants='transparent'
         />
       </div>
     </div>

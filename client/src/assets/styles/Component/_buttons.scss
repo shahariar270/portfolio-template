@@ -45,12 +45,8 @@
     }
     &--transparent {
         @extend .st-btn;
-        background-color: transparent;
-        color: var(--st-color-text);
-
-        &:hover {
-            background-color: var(--st-color-secondary-hover); // gray-300
-        }
+        background-color: none;
+        color: var(--text-primary);
     }
     // Sizes
     &--sm {
