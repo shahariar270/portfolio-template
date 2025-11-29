@@ -25,4 +25,35 @@ $color-text-secondary: #6b7280;
 $color-text-secondary-hover: #4b5563;
 
 $text-white: #fff;
-$text-white-hover: #f1f1f1
+$text-white-hover: #f1f1f1;
+//night theme color
+
+/* Dark Theme Primary */
+$dark-color-primary: #818cf8; // lighter version of primary for contrast
+$dark-color-primary-hover: #a5b4fc;
+
+/* Dark Secondary */
+$dark-color-secondary: #34d399;
+$dark-color-secondary-hover: #6ee7b7;
+
+/* Background */
+$dark-color-bg-light: #0d1117; // GitHub dark style
+$dark-color-bg-light-hover: #161b22;
+
+/* Neutral Shades */
+$dark-color-neutral-light: #1f2937;
+$dark-color-neutral-light-hover: #4b5563;
+
+$dark-color-neutral-dark: #f3f4f6;
+$dark-color-neutral-dark-hover: #e5e7eb;
+
+/* Dark Text */
+$dark-color-text-primary: #e5e7eb;
+$dark-color-text-primary-hover: #ffffff;
+
+$dark-color-text-secondary: #9ca3af;
+$dark-color-text-secondary-hover: #d1d5db;
+
+/* White */
+$dark-text-white: #ffffff;
+$dark-text-white-hover: #fafafa;

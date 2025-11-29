@@ -23,3 +23,29 @@
     --text-white: #{$text-white};
     --text-white-hover: #{$text-white-hover};
 }
+
+[data-theme="dark"] {
+    --color-primary: #{$dark-color-primary};
+    --color-primary-hover: #{$dark-color-primary-hover};
+
+    --color-secondary: #{$dark-color-secondary};
+    --color-secondary-hover: #{$dark-color-secondary-hover};
+
+    --color-neutral-light: #{$dark-color-neutral-light};
+    --color-neutral-light-hover: #{$dark-color-neutral-light-hover};
+
+    --color-neutral-dark: #{$dark-color-neutral-dark};
+    --color-neutral-dark-hover: #{$dark-color-neutral-dark-hover};
+
+    --color-bg-light: #{$dark-color-bg-light};
+    --color-bg-light-hover: #{$dark-color-bg-light-hover};
+
+    --text-primary: #{$dark-color-text-primary};
+    --text-primary-hover: #{$dark-color-text-primary-hover};
+
+    --text-secondary: #{$dark-color-text-secondary};
+    --text-secondary-hover: #{$dark-color-text-secondary-hover};
+
+    --text-white: #{$dark-text-white};
+    --text-white-hover: #{$dark-text-white-hover};
+}
