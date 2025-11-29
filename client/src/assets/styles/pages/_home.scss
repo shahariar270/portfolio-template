@@ -3,9 +3,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 24px;
-        &__content{
-
+        height: 100vh;
+        width: 100%;
+        margin: 12px;
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        &__content {
         }
     }
 }
