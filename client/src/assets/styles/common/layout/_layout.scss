@@ -1,0 +1,28 @@
+.st-portfolio {
+    &--layout {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .st-portfolio {
+        &--layout {
+            max-width: 750px;
+            padding: 0 32px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .st-portfolio {
+        &--layout {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+    }
+}
