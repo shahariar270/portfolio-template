@@ -1,0 +1,11 @@
+st-portfolio {
+    &--home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        &__content{
+
+        }
+    }
+}
