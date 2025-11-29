@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@Layout': path.resolve(__dirname, './src/Layout')
+      '@Layout': path.resolve(__dirname, './src/Layout'),
+      '@Component': path.resolve(__dirname, './src/Component')
     }
   }
 })

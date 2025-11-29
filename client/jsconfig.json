@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@Layout/*": ["Layout/*"]
+      "@Layout/*": ["Layout/*"],
+      "@Component/*": ["Component/*"],
     }
   },
   "exclude": ["node_modules"]

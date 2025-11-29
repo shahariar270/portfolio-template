@@ -14,9 +14,12 @@
     --color-bg-light: #{$color-bg-light};
     --color-bg-light-hover: #{$color-bg-light-hover};
 
-    --color-text-primary: #{$color-text-primary};
-    --color-text-primary-hover: #{$color-text-primary-hover};
+    --text-primary: #{$color-text-primary};
+    --text-primary-hover: #{$color-text-primary-hover};
 
-    --color-text-secondary: #{$color-text-secondary};
-    --color-text-secondary-hover: #{$color-text-secondary-hover};
+    --text-secondary: #{$color-text-secondary};
+    --text-secondary-hover: #{$color-text-secondary-hover};
+
+    --text-white: #{$text-white};
+    --text-white-hover: #{$text-white-hover};
 }
