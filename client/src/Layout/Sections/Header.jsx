@@ -1,15 +1,27 @@
 import Button from '@Component/Button'
 import { menuArray } from '@Layout/Helper'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export const Header = () => {
-  const [isDark, setIsDark] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      return savedTheme === "dark";
+    }
 
-  const handleTheme = () => {
-    setIsDark(!isDark)
-  }
-  console.log(isDark);
+    return window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
+
+  useEffect(() => {
+    const themeName = isDark ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", themeName);
+    localStorage.setItem("theme", themeName);
+  }, [isDark]);
+
+  const handleTheme = () => setIsDark((prev) => !prev);
+
 
   return (
     <div className='st-portfolio--header'>
