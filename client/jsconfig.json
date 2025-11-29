@@ -4,6 +4,7 @@
     "paths": {
       "@Layout/*": ["Layout/*"],
       "@Component/*": ["Component/*"],
+      "@Pages/*": ["Pages/*"],
     }
   },
   "exclude": ["node_modules"]
