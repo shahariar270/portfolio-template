@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #{$color-primary};
+    --color-primary-hover: #{$color-primary-hover};
+
+    --color-secondary: #{$color-secondary};
+    --color-secondary-hover: #{$color-secondary-hover};
+
+    --color-neutral-light: #{$color-neutral-light};
+    --color-neutral-light-hover: #{$color-neutral-light-hover};
+
+    --color-neutral-dark: #{$color-neutral-dark};
+    --color-neutral-dark-hover: #{$color-neutral-dark-hover};
+
+    --color-bg-light: #{$color-bg-light};
+    --color-bg-light-hover: #{$color-bg-light-hover};
+
+    --color-text-primary: #{$color-text-primary};
+    --color-text-primary-hover: #{$color-text-primary-hover};
+
+    --color-text-secondary: #{$color-text-secondary};
+    --color-text-secondary-hover: #{$color-text-secondary-hover};
+}
