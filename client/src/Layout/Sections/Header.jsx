@@ -28,8 +28,10 @@ export const Header = () => {
     <div className='st-portfolio--header'>
       <div className="st-portfolio--logo">
            <img src={profile} alt="" />
+           <h1>Shahariar</h1>
+           <p>React Developer | MERN Stack Enthusiast</p>
       </div>
-      <div className="st-portfolio--menu">
+      {/* <div className="st-portfolio--menu">
         {menuArray.map((item, index) => (
           <Link key={index} >
             <p>
@@ -45,7 +47,7 @@ export const Header = () => {
           variants='transparent'
           onClick={handleTheme}
         />
-      </div>
+      </div> */}
     </div>
   )
 }
