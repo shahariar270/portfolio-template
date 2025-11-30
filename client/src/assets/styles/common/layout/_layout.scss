@@ -1,9 +1,10 @@
 .st-portfolio {
     &--layout {
         width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 16px;
+        min-width: 1024px;
+        height: 100vh;
+        display: flex;
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     }
 }
 
