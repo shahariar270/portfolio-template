@@ -2,14 +2,16 @@
     &--header {
         height: auto;
         padding: 12px;
+        margin: 16px;
         display: flex;
         border-radius: 8px;
         position: sticky;
-        width: 100%;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--color-primary);
+        background-color: var(--color-secondary);
         z-index: 1000;
+        flex-direction: column;
+        width: 250px;
     }
     &--logo {
         color: var(--text-white);
@@ -17,6 +19,10 @@
         font-weight: 600;
         &:hover {
             color: var(--text-white-hover);
+        }
+        img{
+            border-radius: 50%;
+            border: 5px solid #fafafa;
         }
     }
 

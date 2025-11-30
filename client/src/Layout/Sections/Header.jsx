@@ -2,6 +2,7 @@ import Button from '@Component/Button'
 import { menuArray } from '@Layout/Helper'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import profile from '../../assets/images/profile.jpg'
 
 export const Header = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -25,7 +26,9 @@ export const Header = () => {
 
   return (
     <div className='st-portfolio--header'>
-      <div className="st-portfolio--logo">SHAHARIAR</div>
+      <div className="st-portfolio--logo">
+           <img src={profile} alt="" />
+      </div>
       <div className="st-portfolio--menu">
         {menuArray.map((item, index) => (
           <Link key={index} >
