@@ -31,16 +31,7 @@ export const LeftContentBox = () => {
            <h1>Shahariar</h1>
            <p>React Developer | MERN Stack Enthusiast</p>
       </div>
-      {/* <div className="st-portfolio--menu">
-        {menuArray.map((item, index) => (
-          <Link key={index} >
-            <p>
-              {item.label}
-            </p>
-          </Link>
-        ))
-        }
-      </div>
+      {/* 
       <div className="st-portfolio--theme">
         <Button
           label={'theme change'}

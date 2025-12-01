@@ -31,7 +31,8 @@
             border-radius: 50%;
             border: 5px solid #fafafa;
         }
-        h1, p{
+        h1,
+        p {
             margin: 0;
             text-align: center;
         }
@@ -40,12 +41,14 @@
     &--menu {
         display: flex;
         gap: 12px;
+        justify-content: end;
+        padding: 16px;
 
         a {
             text-decoration: none;
 
             p {
-                margin: 0; // instead of padding 0, use margin
+                margin: 0;
                 color: var(--text-white);
                 font-weight: 600;
                 &:hover {
@@ -55,4 +58,9 @@
             }
         }
     }
+}
+
+.st-portfolio--menu a.active p {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
 }
