@@ -10,14 +10,14 @@ export const menuArray =[
   },
   {
     label:'Skill',
-    route:'/'
+    route:'/skill'
   },
   {
     label:'Project',
-    route:'/'
+    route:'/project'
   },
   {
     label:'Contact',
-    route:'/'
+    route:'/contact'
   },
 ]
