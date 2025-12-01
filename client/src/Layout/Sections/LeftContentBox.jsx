@@ -25,7 +25,7 @@ export const LeftContentBox = () => {
 
 
   return (
-    <div className='st-portfolio--header'>
+    <div className='st-portfolio--left-content'>
       <div className="st-portfolio--logo">
            <img src={profile} alt="" />
            <h1>Shahariar</h1>
