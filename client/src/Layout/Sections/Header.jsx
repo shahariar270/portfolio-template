@@ -11,7 +11,7 @@ export const Header = () => {
                 {menuArray.map((item, index) => (
                     <NavLink
                         key={index}
-                        to={item.path} // must include path
+                        to={item.route} // must include path
                         className={({ isActive }) => (isActive ? "active" : "")}
                     >
                         <p>{item.label}</p>

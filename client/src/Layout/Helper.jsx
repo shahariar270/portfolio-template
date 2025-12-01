@@ -6,7 +6,7 @@ export const menuArray =[
   },
   {
     label:'About Me',
-    route:'/'
+    route:'/about'
   },
   {
     label:'Skill',
