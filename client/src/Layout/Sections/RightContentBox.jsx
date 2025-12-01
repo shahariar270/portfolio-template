@@ -2,6 +2,8 @@ import React from 'react'
 
 export const RightContentBox = () => {
   return (
-    <div></div>
+    <div
+        className='st-portfolio--right-content'
+    ></div>
   )
 }
