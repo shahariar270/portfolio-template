@@ -1,11 +1,11 @@
 import React from 'react'
-import { Header } from './Sections/Header'
+import { LeftContentBox } from './Sections/LeftContentBox'
 import { Outlet } from 'react-router-dom'
 
 export const Layout = () => {
   return (
     <div className='st-portfolio--layout'>
-      <Header />
+      <LeftContentBox />
       <Outlet />
     </div>
   )
