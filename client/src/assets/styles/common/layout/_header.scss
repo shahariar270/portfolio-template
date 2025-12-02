@@ -4,4 +4,12 @@
         justify-content: space-between;
         padding: 8px;
     }
+    &--route-name {
+        h3 {
+            border-bottom: 5px solid var(--text-white);
+            border-radius: 4px;
+            width: 100px;
+            color: var(--text-white);
+        }
+    }
 }
