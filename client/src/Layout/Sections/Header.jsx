@@ -1,11 +1,17 @@
 import { menuArray } from '@Layout/Helper'
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 export const Header = () => {
+    const { pathname } = useLocation();
+
+    const currentPath = menuArray.find(item => item.route === pathname)
+
     return (
         <div className='st-portfolio--header'>
-            <div className="st-portfolio--route-name"></div>
+            <div className="st-portfolio--route-name">
+                {currentPath ? currentPath.label : 'Home'}
+            </div>
 
             <div className="st-portfolio--menu">
                 {menuArray.map((item, index) => (
