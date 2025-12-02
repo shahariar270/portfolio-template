@@ -1,14 +1,113 @@
-.st-portfolio {
-    &--home {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        margin: 12px;
-        &__content {
-            overflow: hidden;
+.st-portfolio--home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4f46e5, #10b981);
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+
+            .highlight {
+                color: #ffde59;
+            }
         }
+
+        p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+
+            .btn {
+                padding: 0.75rem 1.5rem;
+                border-radius: 0.5rem;
+                font-weight: bold;
+                text-decoration: none;
+                transition: all 0.3s ease;
+
+                &.btn-primary {
+                    background-color: #ffde59;
+                    color: #111827;
+
+                    &:hover {
+                        background-color: #ffd700;
+                    }
+                }
+
+                &.btn-secondary {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    color: #fff;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.4);
+                    }
+                }
+            }
+        }
+    }
+
+    .background-shapes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        span {
+            position: absolute;
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite ease-in-out;
+
+            &:nth-child(1) {
+                top: 10%;
+                left: 5%;
+            }
+            &:nth-child(2) {
+                top: 50%;
+                left: 80%;
+                width: 300px;
+                height: 300px;
+                animation-duration: 20s;
+            }
+            &:nth-child(3) {
+                top: 70%;
+                left: 30%;
+                width: 150px;
+                height: 150px;
+                animation-duration: 25s;
+            }
+        }
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-50px) rotate(180deg);
     }
 }
 
