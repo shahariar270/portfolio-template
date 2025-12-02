@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         <div className='st-portfolio--header'>
             <div className="st-portfolio--route-name">
-                {currentPath ? currentPath.label : 'Home'}
+                <h3>{currentPath ? currentPath.label : 'Home'}</h3>
             </div>
 
             <div className="st-portfolio--menu">
