@@ -43,6 +43,9 @@
         gap: 12px;
         justify-content: end;
         padding: 16px;
+        background: rgba(200, 180, 255, 0.55);
+        backdrop-filter: blur(10px);
+        border-radius: 22px 62px;
 
         a {
             text-decoration: none;
