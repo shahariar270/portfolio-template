@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import profile from '../../assets/images/profile.jpg';
+import profile from '../../assets/images/home.jpg';
 
 const Home = () => {
   const roles = ["Shahariar", "React Developer", "MERN Developer"];

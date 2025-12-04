@@ -70,9 +70,9 @@
         .hero-image {
             margin-left: 2rem;
             img {
-                width: 250px;
-                height: 250px;
-                border-radius: 50%;
+                width: 350px;
+                height: 450px;
+                // border-radius: 50%;
                 object-fit: cover;
                 border: 4px solid rgba(255, 255, 255, 0.3);
                 animation: slideUp 1s ease-out forwards; /* animate image too */
