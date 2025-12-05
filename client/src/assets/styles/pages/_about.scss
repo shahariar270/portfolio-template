@@ -3,7 +3,17 @@
         padding: 16px;
         h2 {
             margin: 0;
-            color:var(--text-white);
+            color: var(--text-white);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 1.8;
+            position: relative;
+        }
+        &__paragraph {
+            color: var(--text-white);
+            margin-top: 24px;
         }
     }
 }
