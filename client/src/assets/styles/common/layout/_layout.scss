@@ -4,8 +4,20 @@
         min-width: 1024px;
         height: 100vh;
         display: flex;
+        cursor: pointer;
         background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     }
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.15s ease-out;
+    z-index: 9999;
 }
 
 @media (max-width: 768px) {
