@@ -26,7 +26,7 @@ export const Project = () => {
 
   // filtering logic
   const filteredProjects =
-    selectedTab === "All" || !selectedTab
+    selectedTab === "all" || !selectedTab
       ? projectArray
       : projectArray.filter((p) => p.category === selectedTab.toLowerCase());
 console.log(filteredProjects);
