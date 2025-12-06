@@ -5,7 +5,7 @@ export const SkillCard = ({ front, icon, back }) => {
 
                 {/* FRONT */}
                 <div className="flip-front">
-                    <span className={icon}></span>
+                    <span className={`st-icon st-icon--${icon}`}></span>
                     <h3>{front}</h3>
                 </div>
 
