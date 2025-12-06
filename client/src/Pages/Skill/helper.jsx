@@ -1,7 +1,7 @@
 export const skillCards = [
     {
         front: "HTML",
-        icon: "st-icon--html",
+        icon: "html",
         back: [
             "Semantic Markup",
             "SEO Friendly Structure",
@@ -11,7 +11,7 @@ export const skillCards = [
     },
     {
         front: "CSS",
-        icon: "st-icon--css",
+        icon: "css",
         back: [
             "Flexbox & Grid",
             "Animations",
@@ -31,7 +31,7 @@ export const skillCards = [
     },
     {
         front: "React",
-        icon: "st-icon--react",
+        icon: "react",
         back: [
             "Hooks",
             "State Management",
@@ -41,7 +41,7 @@ export const skillCards = [
     },
     {
         front: "Redux",
-        icon: "st-icon--redux",
+        icon: "redux",
         back: [
             "Store & Reducers",
             "Actions",
@@ -51,7 +51,7 @@ export const skillCards = [
     },
     {
         front: "Node.js",
-        icon: "st-icon--node",
+        icon: "node",
         back: [
             "REST APIs",
             "Express.js",
@@ -61,7 +61,7 @@ export const skillCards = [
     },
     {
         front: "MongoDB",
-        icon: "st-icon--mongodb",
+        icon: "mongodb",
         back: [
             "Mongoose",
             "Data Modeling",
@@ -71,7 +71,7 @@ export const skillCards = [
     },
     {
         front: "Git",
-        icon: "st-icon--git",
+        icon: "git",
         back: [
             "Version Control",
             "Branching",
@@ -81,7 +81,7 @@ export const skillCards = [
     },
     {
         front: "GitHub",
-        icon: "st-icon--github",
+        icon: "github",
         back: [
             "Repositories",
             "Pull Requests",
@@ -91,7 +91,7 @@ export const skillCards = [
     },
     {
         front: "VS Code",
-        icon: "st-icon--vscode",
+        icon: "vscode",
         back: [
             "Extensions",
             "Debugging",
@@ -101,7 +101,7 @@ export const skillCards = [
     },
     {
         front: "WordPress",
-        icon: "st-icon--wordpress",
+        icon: "wordpress",
         back: [
             "Theme Customization",
             "Plugins",
