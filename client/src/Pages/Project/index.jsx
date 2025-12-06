@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { menuArray } from "./helper";
+import { menuArray, projectArray } from "./helper";
 
 export const Project = () => {
   const [selectedTab, setSelectedTab] = useState("");
@@ -10,6 +10,7 @@ export const Project = () => {
     if (tab) setSelectedTab(tab);
   }, []);
 
+  // update URL when tab changes
   const handleTabClick = (label) => {
     setSelectedTab(label);
 
@@ -21,10 +22,14 @@ export const Project = () => {
       "",
       `${window.location.pathname}?${params.toString()}`
     );
-
-
   };
 
+  // filtering logic
+  const filteredProjects =
+    selectedTab === "All" || !selectedTab
+      ? projectArray
+      : projectArray.filter((p) => p.category === selectedTab.toLowerCase());
+console.log(filteredProjects);
   return (
     <div className="st-portfolio--project">
       <ul className="project-menu">
@@ -38,6 +43,15 @@ export const Project = () => {
           </li>
         ))}
       </ul>
+
+      <div className="project-list">
+        {filteredProjects.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3>{project.label}</h3>
+            <p>{project.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
