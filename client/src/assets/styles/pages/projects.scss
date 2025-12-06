@@ -1,0 +1,17 @@
+.project-menu {
+    display: flex;
+    list-style: none;
+}
+
+.project-menu li {
+    cursor: pointer;
+    padding: 6px 12px;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.project-menu li.active-tab {
+    color: #fff;
+    background: #4a4a4a;
+    border-radius: 6px;
+}
