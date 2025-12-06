@@ -21,7 +21,7 @@ export const skillCards = [
     },
     {
         front: "JavaScript",
-        icon: "st-icon--javascript",
+        icon: "javascript",
         back: [
             "ES6+ Features",
             "Async/Await",
@@ -91,7 +91,7 @@ export const skillCards = [
     },
     {
         front: "VS Code",
-        icon: "vscode",
+        icon: "vs-code",
         back: [
             "Extensions",
             "Debugging",
