@@ -42,12 +42,14 @@ export const Contact = () => {
             name='name'
             placeholder='Enter your Name'
             require
+            className='st-input'
           />
           <Field
             as='input'
             name='email'
             placeholder='Enter your Email'
             require
+            className='st-input'
           />
           <Field
             as='textarea'
