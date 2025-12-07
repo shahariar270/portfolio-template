@@ -23,7 +23,7 @@ app.post("/contact", async (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: "shahariardorjoy52@gmail.com", 
+        to: "shahariardorjoy52@gmail.com",
         subject: "New Contact Form Message",
         text: `
 নতুন একটি মেসেজ পেয়েছেন!
