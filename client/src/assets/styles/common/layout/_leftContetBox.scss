@@ -67,3 +67,12 @@
     color: var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
 }
+
+@media (max-width: 768px) {
+    .st-portfolio {
+        &--left-content,
+        &--right-content {
+            margin: 12px;
+        }
+    }
+}

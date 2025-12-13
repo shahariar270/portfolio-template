@@ -10,7 +10,6 @@ export const Project = () => {
     if (tab) setSelectedTab(tab);
   }, []);
 
-  // update URL when tab changes
   const handleTabClick = (label) => {
     setSelectedTab(label);
 

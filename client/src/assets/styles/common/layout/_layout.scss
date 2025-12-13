@@ -23,8 +23,8 @@
 @media (max-width: 768px) {
     .st-portfolio {
         &--layout {
-            max-width: 750px;
-            padding: 0 32px;
+            min-width: 750px;
+            height: 100vh;
         }
     }
 }
