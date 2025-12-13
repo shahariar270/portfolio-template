@@ -38,6 +38,7 @@
             .hero-buttons {
                 display: flex;
                 gap: 1rem;
+                margin: 8px 0;
 
                 .btn {
                     padding: 0.75rem 1.5rem;
@@ -208,6 +209,10 @@
             }
             .hero-text p {
                 font-size: 16px;
+                margin: 0;
+            }
+            .hero-image img {
+                height: 170px;
             }
         }
     }
