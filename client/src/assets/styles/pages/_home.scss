@@ -198,3 +198,17 @@
         transform: translateY(0);
     }
 }
+// responsive start here
+@media (max-width: 768px) {
+    .st-portfolio {
+        &--home__content {
+            flex-direction: column;
+            .hero-text h1 {
+                font-size: 20px;
+            }
+            .hero-text p {
+                font-size: 16px;
+            }
+        }
+    }
+}
