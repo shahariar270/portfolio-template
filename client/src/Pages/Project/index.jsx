@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { menuArray, projectArray } from "./helper";
 
 export const Project = () => {
-  const [selectedTab, setSelectedTab] = useState("");
+  const [selectedTab, setSelectedTab] = useState("all");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
