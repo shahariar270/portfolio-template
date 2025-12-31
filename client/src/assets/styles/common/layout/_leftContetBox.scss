@@ -76,3 +76,22 @@
         }
     }
 }
+@media (max-width: 475px) {
+    .st-portfolio {
+        &--left-content,
+        &--right-content {
+            margin: 12px;
+        }
+
+        &--left-content{
+            width: 100%;
+            min-width: 425px;
+            padding: 8px;
+            overflow: hidden;
+         
+        }
+        &--logo{
+            flex-direction: row;
+        }
+    }
+}
