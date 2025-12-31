@@ -85,10 +85,8 @@
 
         &--left-content{
             width: 100%;
-            min-width: 425px;
+            max-width: 425px;
             padding: 8px;
-            overflow: hidden;
-         
         }
         &--logo{
             flex-direction: row;

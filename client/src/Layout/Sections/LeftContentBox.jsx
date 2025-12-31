@@ -27,9 +27,11 @@ export const LeftContentBox = () => {
   return (
     <div className='st-portfolio--left-content'>
       <div className="st-portfolio--logo">
-           <img src={profile} alt="" />
-           <h1>Shahariar</h1>
-           <p>React Developer | MERN Stack Enthusiast</p>
+        <img src={profile} alt="" />
+        <div className="st-portfolio--content">
+          <h1>Shahariar</h1>
+          <p>React Developer | MERN Stack Enthusiast</p>
+        </div>
       </div>
       {/* 
       <div className="st-portfolio--theme">
