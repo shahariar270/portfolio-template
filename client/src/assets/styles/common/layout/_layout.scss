@@ -33,9 +33,11 @@
     .st-portfolio {
         &--layout {
             width: 100%;
-            max-width: 100%;
+            min-width: 475px;
             margin: 0 auto;
             padding: 0 16px;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

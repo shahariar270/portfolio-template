@@ -28,7 +28,6 @@ export const Project = () => {
     selectedTab === "all" || !selectedTab
       ? projectArray
       : projectArray.filter((p) => p.category === selectedTab.toLowerCase());
-console.log(filteredProjects);
   return (
     <div className="st-portfolio--project">
       <ul className="project-menu">
