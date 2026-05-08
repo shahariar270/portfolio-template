@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { menuArray, projectArray } from "./helper";
 
 export const Project = () => {
-  const [selectedTab, setSelectedTab] = useState("all");
-
-  useEffect(() => {
+  const [selectedTab, setSelectedTab] = useState(() => {
     const params = new URLSearchParams(window.location.search);
-    const tab = params.get("tab");
-    if (tab) setSelectedTab(tab);
-  }, []);
+    return params.get("tab") || "all";
+  });
 
   const handleTabClick = (label) => {
     setSelectedTab(label);
@@ -23,7 +20,6 @@ export const Project = () => {
     );
   };
 
-  // filtering logic
   const filteredProjects =
     selectedTab === "all" || !selectedTab
       ? projectArray

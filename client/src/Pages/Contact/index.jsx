@@ -2,6 +2,25 @@ import Button from '@Component/Button'
 import { Field, Form, Formik } from 'formik'
 import React from 'react'
 
+const contactInfo = [
+  {
+    label: 'Location',
+    value: 'Jhenaidah, Bangladesh',
+  },
+  {
+    label: 'Working Area',
+    value: 'Dhaka and remote projects',
+  },
+  {
+    label: 'Email',
+    value: 'shahariar@example.com',
+  },
+  {
+    label: 'Phone',
+    value: '+880 1XXX-XXXXXX',
+  },
+]
+
 export const Contact = () => {
   const handleSubmit = async (values, { resetForm }) => {
     try {
@@ -26,43 +45,75 @@ export const Contact = () => {
   }
 
   return (
-    <div className='st-form-container'>
-      <Formik
-        initialValues={
-          {
-            name: '',
-            email: '',
-            content: ''
-          }}
-        onSubmit={handleSubmit}
-      >
-        <Form className='st-form-wrapper'>
-          <Field
-            as='input'
-            name='name'
-            placeholder='Enter your Name'
-            require
-            className='st-input'
-          />
-          <Field
-            as='input'
-            name='email'
-            placeholder='Enter your Email'
-            require
-            className='st-input'
-          />
-          <Field
-            as='textarea'
-            name='content'
-            placeholder='Enter your Massage'
-          />
-          <Button
-            type='submit'
-            label={'Submit Value'}
-          />
-        </Form>
-      </Formik>
-    </div>
+    <section className='st-contact-page'>
+      <div className="st-contact-intro">
+        <p>Contact</p>
+        <h2>Let's talk about your next web project.</h2>
+        <span>
+          Send a message for React, MERN, responsive UI, or frontend development work.
+        </span>
+      </div>
 
+      <div className="st-contact-grid">
+        <div className="st-contact-details">
+          <div className="st-contact-info-list">
+            {contactInfo.map((item) => (
+              <div className="st-contact-info-card" key={item.label}>
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+
+          <div className="st-contact-map">
+            <iframe
+              title="Jhenaidah Bangladesh location map"
+              src="https://www.google.com/maps?q=Jhenaidah,%20Bangladesh&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className='st-form-container'>
+          <Formik
+            initialValues={
+              {
+                name: '',
+                email: '',
+                content: ''
+              }}
+            onSubmit={handleSubmit}
+          >
+            <Form className='st-form-wrapper'>
+              <Field
+                as='input'
+                name='name'
+                placeholder='Enter your Name'
+                required
+                className='st-input'
+              />
+              <Field
+                as='input'
+                name='email'
+                placeholder='Enter your Email'
+                required
+                className='st-input'
+              />
+              <Field
+                as='textarea'
+                name='content'
+                placeholder='Enter your Message'
+                required
+              />
+              <Button
+                type='submit'
+                label={'Send Message'}
+              />
+            </Form>
+          </Formik>
+        </div>
+      </div>
+    </section>
   )
 }

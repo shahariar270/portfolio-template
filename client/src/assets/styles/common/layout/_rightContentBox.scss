@@ -1,11 +1,22 @@
 .st-portfolio {
     &--right-content {
-        height: auto;
-        min-height: 120px;
-        width: 80%;
-        margin: 16px;
+        min-width: 0;
+        min-height: calc(100vh - 40px);
+        flex: 1;
         overflow: auto;
         border-radius: 8px;
-        background: linear-gradient(135deg, #0F766E, #10B981, #BBF7D0);
+        background: var(--panel-bg);
+        border: 1px solid rgba(255, 255, 255, 0.58);
+        box-shadow: var(--shadow-soft);
+    }
+}
+
+@media (max-width: 768px) {
+    .st-portfolio {
+        &--right-content {
+            min-height: auto;
+            width: 100%;
+            overflow: visible;
+        }
     }
 }

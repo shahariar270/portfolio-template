@@ -17,6 +17,10 @@ export const menuArray =[
     route:'/project'
   },
   {
+    label:'Blog',
+    route:'/blog'
+  },
+  {
     label:'Contact',
     route:'/contact'
   },

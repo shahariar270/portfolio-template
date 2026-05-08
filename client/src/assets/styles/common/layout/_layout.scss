@@ -1,11 +1,13 @@
 .st-portfolio {
     &--layout {
         width: 100%;
-        min-width: 1024px;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
-        cursor: pointer;
-        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        gap: 20px;
+        padding: 20px;
+        background:
+            linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(37, 99, 235, 0.08)),
+            var(--layout-bg);
     }
 }
 
@@ -23,29 +25,28 @@
 @media (max-width: 768px) {
     .st-portfolio {
         &--layout {
-            min-width: 750px;
-            height: 100vh;
+            min-height: 100vh;
+            flex-direction: column;
+            gap: 14px;
+            padding: 14px;
         }
+    }
+
+    .cursor {
+        display: none;
     }
 }
 
 @media (max-width: 475px) {
     .st-portfolio {
         &--layout {
-            width: 100%;
-            min-width: 475px;
-            margin: 0 auto;
-            flex-direction: column;
-            align-items: center;
+            padding: 10px;
         }
         &--logo{
             img{
-                height: 120px;
-                width: 120px;
+                height: 72px;
+                width: 72px;
             }
-        }
-        &--content{
-            
         }
     }
 }

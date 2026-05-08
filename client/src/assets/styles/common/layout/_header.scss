@@ -1,15 +1,44 @@
 .st-portfolio {
     &--header {
         display: flex;
+        align-items: center;
+        gap: 16px;
         justify-content: space-between;
-        padding: 8px;
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--border-color);
+        background: rgba(255, 255, 255, 0.64);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        backdrop-filter: blur(14px);
     }
     &--route-name {
         h3 {
-            border-bottom: 5px solid var(--text-white);
+            border-bottom: 3px solid var(--color-primary);
             border-radius: 4px;
-            width: 100px;
-            color: var(--text-white);
+            width: max-content;
+            margin: 0;
+            padding-bottom: 4px;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .st-portfolio {
+        &--header {
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 14px;
+            position: static;
+        }
+
+        &--menu {
+            width: 100%;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding: 8px;
         }
     }
 }

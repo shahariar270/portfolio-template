@@ -1,59 +1,48 @@
-/* Primary Colors */
-$color-primary: #4f46e5;
-$color-primary-hover: #6366f1;
+/* Professional portfolio palette */
+$color-primary: #0f766e;
+$color-primary-hover: #115e59;
 
-/* Secondary / Accent Colors */
-$color-secondary: #10b981;
-$color-secondary-hover: #34d399;
+$color-secondary: #2563eb;
+$color-secondary-hover: #1d4ed8;
 
-/* Neutral Colors */
-$color-neutral-light: #f3f4f6;
-$color-neutral-light-hover: #e5e7eb;
+$color-neutral-light: #f4f7fb;
+$color-neutral-light-hover: #e7edf5;
 
 $color-neutral-dark: #111827;
 $color-neutral-dark-hover: #1f2937;
 
-/* Background Colors */
 $color-bg-light: #ffffff;
-$color-bg-light-hover: #f9fafb;
+$color-bg-light-hover: #f8fafc;
 
-/* Text Colors */
-$color-text-primary: #1f2937;
-$color-text-primary-hover: #111827;
+$color-text-primary: #172033;
+$color-text-primary-hover: #0f172a;
 
-$color-text-secondary: #6b7280;
-$color-text-secondary-hover: #4b5563;
+$color-text-secondary: #64748b;
+$color-text-secondary-hover: #475569;
 
-$text-white: #fff;
-$text-white-hover: #f1f1f1;
-//night theme color
+$text-white: #ffffff;
+$text-white-hover: #eaf2ff;
 
-/* Dark Theme Primary */
-$dark-color-primary: #818cf8; // lighter version of primary for contrast
-$dark-color-primary-hover: #a5b4fc;
+$dark-color-primary: #14b8a6;
+$dark-color-primary-hover: #2dd4bf;
 
-/* Dark Secondary */
-$dark-color-secondary: #34d399;
-$dark-color-secondary-hover: #6ee7b7;
+$dark-color-secondary: #60a5fa;
+$dark-color-secondary-hover: #93c5fd;
 
-/* Background */
-$dark-color-bg-light: #0d1117; // GitHub dark style
-$dark-color-bg-light-hover: #161b22;
+$dark-color-bg-light: #0f172a;
+$dark-color-bg-light-hover: #111c31;
 
-/* Neutral Shades */
-$dark-color-neutral-light: #1f2937;
-$dark-color-neutral-light-hover: #4b5563;
+$dark-color-neutral-light: #1e293b;
+$dark-color-neutral-light-hover: #334155;
 
-$dark-color-neutral-dark: #f3f4f6;
-$dark-color-neutral-dark-hover: #e5e7eb;
+$dark-color-neutral-dark: #f8fafc;
+$dark-color-neutral-dark-hover: #e2e8f0;
 
-/* Dark Text */
-$dark-color-text-primary: #e5e7eb;
+$dark-color-text-primary: #e2e8f0;
 $dark-color-text-primary-hover: #ffffff;
 
-$dark-color-text-secondary: #9ca3af;
-$dark-color-text-secondary-hover: #d1d5db;
+$dark-color-text-secondary: #94a3b8;
+$dark-color-text-secondary-hover: #cbd5e1;
 
-/* White */
 $dark-text-white: #ffffff;
-$dark-text-white-hover: #fafafa;
+$dark-text-white-hover: #f8fafc;

@@ -1,36 +1,60 @@
+.st-portfolio--project {
+    padding: clamp(18px, 3vw, 32px);
+}
+
 .project-menu {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
 }
 
 .project-menu li {
     cursor: pointer;
-    padding: 6px 12px;
-    color: #aaa;
+    padding: 9px 14px;
+    color: var(--text-secondary);
     transition: 0.2s;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--surface);
+    font-weight: 700;
 }
 
 .project-menu li.active-tab {
-    color: #fff;
-    background: #4a4a4a;
-    border-radius: 6px;
+    color: var(--text-white);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 0;
 }
 
 .project-card {
-    height: 150px;
-    width: 300px;
+    min-height: 170px;
     gap: 8px;
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    padding: 18px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-card);
     h3 , p{
         margin: 0;
-        color: #fff;
+    }
+
+    h3 {
+        color: var(--text-primary);
+    }
+
+    p {
+        color: var(--text-secondary);
+        line-height: 1.6;
     }
 }
