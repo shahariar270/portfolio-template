@@ -1,0 +1,113 @@
+.st-admin {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: radial-gradient(ellipse at top, #1e3a5f 0%, #0f172a 55%, #020617 100%);
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, sans-serif;
+
+  &__panel {
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.75);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  &__lead {
+    margin: 0 0 1.5rem;
+    line-height: 1.55;
+    color: #cbd5e1;
+  }
+
+  &__muted {
+    margin: 0 0 1.25rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #94a3b8;
+
+    code {
+      font-size: 0.82rem;
+      color: #7dd3fc;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #94a3b8;
+  }
+
+  &__input {
+    padding: 0.65rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(2, 6, 23, 0.6);
+    color: #f8fafc;
+    font-size: 1rem;
+    outline: none;
+
+    &:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+  }
+
+  &__error {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #fca5a5;
+  }
+
+  &__api-hint {
+    margin: 0 0 0.75rem;
+    font-size: 0.75rem;
+    color: #64748b;
+    word-break: break-all;
+  }
+
+  &__btn {
+    margin-top: 0.75rem;
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: #fff;
+
+    &:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    &--ghost {
+      margin-top: 1rem;
+      background: transparent;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: #e2e8f0;
+
+      &:hover:not(:disabled) {
+        background: rgba(148, 163, 184, 0.1);
+      }
+    }
+  }
+}
