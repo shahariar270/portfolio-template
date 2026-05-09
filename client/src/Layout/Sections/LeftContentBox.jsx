@@ -55,7 +55,7 @@ export const LeftContentBox = () => {
         <img src={profile} alt="" />
         <div className="st-portfolio--content">
           <h1>Shahariar</h1>
-          <p>React Developer | MERN Stack Enthusiast</p>
+          <p>React Developer | MERN Stack Enthusiast | CMS & Framework Expert</p>
         </div>
       </div>
 
@@ -143,7 +143,7 @@ export const LeftContentBox = () => {
           aria-labelledby={isMobile ? 'sidebar-facts-label' : undefined}
           aria-hidden={isMobile ? !factsExpanded : false}
         >
-          <div className="st-portfolio--quick-info">
+          {/* <div className="st-portfolio--quick-info">
             <div>
               <span>Focus</span>
               <strong>Frontend + MERN</strong>
@@ -156,7 +156,7 @@ export const LeftContentBox = () => {
               <span>Response</span>
               <strong>Within 24 hours</strong>
             </div>
-          </div>
+          </div> */}
 
           <div className="st-portfolio--sidebar-stats">
             <div>

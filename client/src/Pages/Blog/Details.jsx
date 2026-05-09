@@ -45,13 +45,13 @@ export const BlogDetails = () => {
           {post.subtitle ? <h2 className="blog-detail__subtitle">{post.subtitle}</h2> : null}
           <p>{post.excerpt}</p>
         </div>
+        <div className="blog-detail__content">
+          {post.content.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
       </div>
 
-      <div className="blog-detail__content">
-        {post.content.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
-      </div>
     </article>
   )
 }

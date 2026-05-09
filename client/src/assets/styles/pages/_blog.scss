@@ -213,13 +213,12 @@
     }
 
     &__content {
-        max-width: 820px;
-        margin-top: 20px;
+        // margin-top: 20px;
         padding: clamp(20px, 3vw, 34px);
-        border-radius: 8px;
-        background: var(--surface);
-        border: 1px solid var(--border-color);
-        box-shadow: var(--shadow-card);
+        // border-radius: 8px;
+        // background: var(--surface);
+        // border: 1px solid var(--border-color);
+        // box-shadow: var(--shadow-card);
 
         p {
             margin: 0;
