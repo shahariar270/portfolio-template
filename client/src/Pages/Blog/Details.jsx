@@ -27,8 +27,8 @@ export const BlogDetails = () => {
   return (
     <article className="st-portfolio--blog-detail">
       <SeoHead
-        title={post.title}
-        description={post.excerpt}
+        title={`${post.category}: ${post.seoTitle ?? post.title}`}
+        description={post.seoDescription ?? post.excerpt}
         image={post.image}
         type="article"
       />
@@ -42,6 +42,7 @@ export const BlogDetails = () => {
             <small>{post.date} | {post.readTime}</small>
           </div>
           <h1>{post.title}</h1>
+          {post.subtitle ? <h2 className="blog-detail__subtitle">{post.subtitle}</h2> : null}
           <p>{post.excerpt}</p>
         </div>
       </div>

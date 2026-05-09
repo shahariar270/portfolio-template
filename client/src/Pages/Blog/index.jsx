@@ -7,15 +7,15 @@ export const Blog = () => {
   return (
     <section className="st-portfolio--blog">
       <SeoHead
-        title="Blog"
-        description="Notes on React, frontend architecture, MERN development, and practical engineering guides."
+        title="Blog: React, Frontend, MERN Articles"
+        description="Read practical React, frontend, and MERN engineering articles covering reusable components, responsive UI, API integration, and production-ready workflows."
       />
       <div className="blog-hero">
-        <p>Blog Template</p>
-        <h2>Notes on React, frontend systems, and MERN development.</h2>
+        <p>Engineering Notes</p>
+        <h2>Practical React, Frontend, and MERN Guides</h2>
         <span>
-          A ready blog layout for publishing development articles, project learnings,
-          and practical engineering guides.
+          Actionable write-ups on component architecture, responsive design,
+          and full-stack implementation patterns.
         </span>
       </div>
 
@@ -28,6 +28,7 @@ export const Blog = () => {
               <small>{post.readTime}</small>
             </div>
             <h3>{post.title}</h3>
+            {post.subtitle ? <p className="blog-card__subtitle">{post.subtitle}</p> : null}
             <p>{post.excerpt}</p>
             <div className="blog-card__footer">
               <time>{post.date}</time>
