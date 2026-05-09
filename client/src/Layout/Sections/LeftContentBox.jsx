@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import profile from '../../assets/images/profile.jpg'
+import { resumeDownloadFilename, resumeDownloadUrl } from '../../config/resume'
 
 const MOBILE_MEDIA = '(max-width: 768px)'
+
+const externalResume = /^https?:\/\//i.test(resumeDownloadUrl)
 
 export const LeftContentBox = () => {
   const [isMobile, setIsMobile] = useState(() =>
@@ -167,6 +170,19 @@ export const LeftContentBox = () => {
           </div>
         </div>
       </div>
+
+      <a
+        className="st-portfolio--resume-link"
+        href={resumeDownloadUrl}
+        {...(externalResume
+          ? { target: '_blank', rel: 'noopener noreferrer' }
+          : { download: resumeDownloadFilename })}
+      >
+        <span className="st-portfolio--resume-link__icon" aria-hidden>
+          ↓
+        </span>
+        Download resume
+      </a>
     </div>
   )
 }

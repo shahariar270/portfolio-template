@@ -227,6 +227,48 @@
         }
     }
 
+    &--resume-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        color: var(--text-white);
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition:
+            background 0.2s ease,
+            border-color 0.2s ease,
+            transform 0.15s ease;
+        box-sizing: border-box;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.22);
+            border-color: rgba(255, 255, 255, 0.35);
+            color: var(--text-white);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        &:focus-visible {
+            outline: 2px solid rgba(167, 243, 208, 0.95);
+            outline-offset: 3px;
+        }
+
+        &__icon {
+            font-size: 16px;
+            line-height: 1;
+            opacity: 0.9;
+        }
+    }
+
     &--sidebar-stats {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
