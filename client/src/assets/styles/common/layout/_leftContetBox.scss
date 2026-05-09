@@ -51,9 +51,42 @@
     }
 
     &--profile-panel,
+    &--sidebar-meta,
     &--quick-info,
     &--sidebar-stats {
         width: 100%;
+    }
+
+    &--sidebar-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            @media (max-width: 768px) {
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition:
+                    max-height 0.38s ease,
+                    opacity 0.28s ease,
+                    visibility 0.38s;
+            }
+        }
+
+        &--expanded &__body {
+            @media (max-width: 768px) {
+                max-height: 560px;
+                opacity: 1;
+                visibility: visible;
+                padding-top: 10px;
+            }
+        }
     }
 
     &--profile-panel {
@@ -62,6 +95,72 @@
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.08);
         color: var(--text-white);
+
+        &__toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%;
+            min-height: 44px;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            text-align: left;
+            font: inherit;
+
+            &:focus-visible {
+                outline: 2px solid rgba(167, 243, 208, 0.9);
+                outline-offset: 3px;
+                border-radius: 6px;
+            }
+
+            .st-portfolio--eyebrow {
+                margin: 0;
+            }
+        }
+
+        &__chevron {
+            flex-shrink: 0;
+            width: 10px;
+            height: 10px;
+            margin-right: 4px;
+            border-right: 2px solid rgba(255, 255, 255, 0.85);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+            transform: rotate(45deg);
+            transition: transform 0.25s ease;
+
+            &--open {
+                transform: rotate(-135deg);
+                margin-top: 6px;
+                margin-bottom: -2px;
+            }
+        }
+
+        &__body {
+            @media (max-width: 768px) {
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition:
+                    max-height 0.35s ease,
+                    opacity 0.28s ease,
+                    visibility 0.35s;
+            }
+        }
+
+        &--expanded &__body {
+            @media (max-width: 768px) {
+                max-height: 280px;
+                opacity: 1;
+                visibility: visible;
+                padding-top: 10px;
+            }
+        }
 
         h2 {
             margin: 8px 0;
@@ -74,6 +173,10 @@
             color: rgba(255, 255, 255, 0.76);
             font-size: 13px;
             line-height: 1.6;
+        }
+
+        &__body h2:first-child {
+            margin-top: 0;
         }
     }
 
@@ -215,6 +318,8 @@
         }
 
         &--profile-panel {
+            width: 100%;
+
             h2 {
                 font-size: 18px;
             }
