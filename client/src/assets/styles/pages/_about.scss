@@ -1,7 +1,7 @@
 .st-portfolio {
     &--about {
         padding: clamp(20px, 4vw, 44px);
-        max-width: 980px;
+        // max-width: 980px;
 
         h2,
         &__paragraph {
@@ -24,11 +24,11 @@
             font-weight: 500;
             line-height: 1.8;
             color: var(--text-secondary);
-            background: var(--surface);
-            border: 1px solid var(--border-color);
+            // background: var(--surface);
+            // border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: clamp(18px, 3vw, 28px);
-            box-shadow: var(--shadow-card);
+            // box-shadow: var(--shadow-card);
         }
     }
 }
