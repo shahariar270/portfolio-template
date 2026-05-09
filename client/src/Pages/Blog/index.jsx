@@ -1,10 +1,15 @@
 import React from 'react'
+import SeoHead from '@Component/SeoHead'
 import { Link } from 'react-router-dom'
 import { createBlogSlug, featuredPosts } from './helper'
 
 export const Blog = () => {
   return (
     <section className="st-portfolio--blog">
+      <SeoHead
+        title="Blog"
+        description="Notes on React, frontend architecture, MERN development, and practical engineering guides."
+      />
       <div className="blog-hero">
         <p>Blog Template</p>
         <h2>Notes on React, frontend systems, and MERN development.</h2>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SeoHead from "@Component/SeoHead";
 import { menuArray, projectArray } from "./helper";
 
 export const Project = () => {
@@ -26,6 +27,10 @@ export const Project = () => {
       : projectArray.filter((p) => p.category === selectedTab.toLowerCase());
   return (
     <div className="st-portfolio--project">
+      <SeoHead
+        title="Projects"
+        description="Selected portfolio projects spanning React apps, MERN builds, CMS work, and interactive frontend experiences."
+      />
       <ul className="project-menu">
         {menuArray.map((item, index) => (
           <li

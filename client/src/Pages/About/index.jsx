@@ -1,8 +1,13 @@
 import React from 'react'
+import SeoHead from '@Component/SeoHead'
 
 export const About = () => {
     return (
         <div className='st-portfolio--about'>
+            <SeoHead
+                title="About"
+                description="JavaScript and MERN stack developer focused on clean code, React, Node.js, MongoDB, and modern frontend practices."
+            />
             <h2>About Me</h2>
             <div className='st-portfolio--about__paragraph'>
                 <span>

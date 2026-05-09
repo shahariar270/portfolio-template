@@ -1,4 +1,5 @@
 import React from 'react'
+import SeoHead from '@Component/SeoHead'
 import { Link, useParams } from 'react-router-dom'
 import { createBlogSlug, featuredPosts } from './helper'
 
@@ -9,6 +10,11 @@ export const BlogDetails = () => {
   if (!post) {
     return (
       <section className="st-portfolio--blog-detail">
+        <SeoHead
+          title="Post not found"
+          description="This blog article is not available."
+          noIndex
+        />
         <div className="blog-detail__not-found">
           <p>Post not found</p>
           <h2>This blog article is not available.</h2>
@@ -20,6 +26,12 @@ export const BlogDetails = () => {
 
   return (
     <article className="st-portfolio--blog-detail">
+      <SeoHead
+        title={post.title}
+        description={post.excerpt}
+        image={post.image}
+        type="article"
+      />
       <Link className="blog-detail__back" to="/blog">Back to Blog</Link>
 
       <div className="blog-detail__hero">

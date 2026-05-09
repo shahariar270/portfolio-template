@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SeoHead from '@Component/SeoHead';
 import profile from '../../assets/images/home.jpg';
+import { defaultDescription } from '../../config/seo';
 
-const roles = ["Shahariar", "React Developer", "MERN Developer"];
+const roles = ["Shahariar", "React Developer", "MERN Developer", "CMS Expert"];
 
 const Home = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -22,6 +24,10 @@ const Home = () => {
 
   return (
     <section className="st-portfolio--home">
+      <SeoHead
+        description={defaultDescription}
+        image={profile}
+      />
       <div className="background-shapes">
         <span></span>
         <span></span>
@@ -31,7 +37,8 @@ const Home = () => {
       <div className="st-portfolio--home__content">
         <div className="hero-text">
           <h1>
-            Hello, I'm{' '}
+            Hello, I'm <br />
+            {' '}
             <span className={`highlight ${animate ? 'slide-up' : 'slide-down'}`}>
               {roles[currentRole]}
             </span>

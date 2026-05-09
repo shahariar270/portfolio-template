@@ -1,4 +1,5 @@
 import Button from '@Component/Button'
+import SeoHead from '@Component/SeoHead'
 import { Field, Form, Formik } from 'formik'
 import React from 'react'
 
@@ -46,6 +47,10 @@ export const Contact = () => {
 
   return (
     <section className='st-contact-page'>
+      <SeoHead
+        title="Contact"
+        description="Get in touch for freelance, remote, or collaboration opportunities. Based in Jhenaidah, Bangladesh; available for Dhaka and remote work."
+      />
       <div className="st-contact-intro">
         <p>Contact</p>
         <h2>Let's talk about your next web project.</h2>
