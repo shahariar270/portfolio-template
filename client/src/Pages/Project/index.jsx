@@ -31,24 +31,45 @@ export const Project = () => {
         title="Projects"
         description="Selected portfolio projects spanning React apps, MERN builds, CMS work, and interactive frontend experiences."
       />
-      <ul className="project-menu">
+      <ul className="st-portfolio--project__tabs">
         {menuArray.map((item, index) => (
           <li
             key={index}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                handleTabClick(item.value);
+              }
+            }}
             onClick={() => handleTabClick(item.value)}
-            className={selectedTab === item.value ? "active-tab" : ""}
+            className={
+              selectedTab === item.value
+                ? "st-portfolio--project__tab st-portfolio--project__tab--active"
+                : "st-portfolio--project__tab"
+            }
           >
             {item.label}
           </li>
         ))}
       </ul>
 
-      <div className="project-list">
+      <div className="st-portfolio--project__grid">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.label}</h3>
-            <p>{project.description}</p>
-          </div>
+          <article key={index} className="st-portfolio--project__card">
+            <div className="st-portfolio--project__card-media">
+              <img
+                className="st-portfolio--project__card-img"
+                src={project.image}
+                alt={`${project.label} preview`}
+              />
+            </div>
+            <div className="st-portfolio--project__card-body">
+              <h3 className="st-portfolio--project__card-title">{project.label}</h3>
+              <p className="st-portfolio--project__card-text">{project.description}</p>
+            </div>
+          </article>
         ))}
       </div>
     </div>

@@ -1,3 +1,6 @@
+import thumbCode from '../../assets/images/home.jpg'
+import thumbUi from '../../assets/images/profile.jpg'
+
 export const menuArray = [
     {
         label: 'All',
@@ -20,7 +23,7 @@ export const projectArray = [
         description: 'A fully functional admin dashboard with analytics, data visualization, user management, and responsive UI components.',
         liveDemo: '',
         link: '',
-        photo: '',
+        image: thumbCode,
     },
     {
         label: 'Design System',
@@ -28,7 +31,7 @@ export const projectArray = [
         description: 'A scalable design system containing typography, colors, spacing, reusable UI components, and guidelines to maintain consistent branding.',
         liveDemo: '',
         link: '',
-        photo: '',
+        image: thumbUi,
     },
     {
         label: 'WillTube',
@@ -36,7 +39,7 @@ export const projectArray = [
         description: 'A YouTube video downloader app that allows users to fetch and download videos in multiple formats with a clean and intuitive interface.',
         liveDemo: '',
         link: '',
-        photo: '',
+        image: thumbCode,
     },
     {
         label: 'Todo',
@@ -44,6 +47,6 @@ export const projectArray = [
         description: 'A simple and efficient todo application with task creation, editing, filtering, and persistent local storage support.',
         liveDemo: '',
         link: '',
-        photo: '',
+        image: thumbUi,
     },
 ];
