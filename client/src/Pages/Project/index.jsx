@@ -64,10 +64,57 @@ export const Project = () => {
                 src={project.image}
                 alt={`${project.label} preview`}
               />
+              <span className="st-portfolio--project__card-type">
+                {project.type}
+              </span>
             </div>
             <div className="st-portfolio--project__card-body">
-              <h3 className="st-portfolio--project__card-title">{project.label}</h3>
+              <div className="st-portfolio--project__card-heading">
+                <span className="st-portfolio--project__card-category">
+                  {project.category}
+                </span>
+                <h3 className="st-portfolio--project__card-title">
+                  {project.label}
+                </h3>
+              </div>
               <p className="st-portfolio--project__card-text">{project.description}</p>
+              <ul className="st-portfolio--project__tech-list" aria-label={`${project.label} technologies`}>
+                {project.technologies.map((tech) => (
+                  <li key={tech} className="st-portfolio--project__tech-item">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+              <div className="st-portfolio--project__card-actions">
+                {project.liveDemo ? (
+                  <a
+                    className="st-portfolio--project__card-link st-portfolio--project__card-link--primary"
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                ) : (
+                  <span className="st-portfolio--project__card-link st-portfolio--project__card-link--disabled">
+                    Case Study
+                  </span>
+                )}
+                {project.link ? (
+                  <a
+                    className="st-portfolio--project__card-link"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source Code
+                  </a>
+                ) : (
+                  <span className="st-portfolio--project__card-link st-portfolio--project__card-link--muted">
+                    Private Repo
+                  </span>
+                )}
+              </div>
             </div>
           </article>
         ))}
