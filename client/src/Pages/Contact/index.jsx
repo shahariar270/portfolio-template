@@ -14,11 +14,11 @@ const contactInfo = [
   },
   {
     label: 'Email',
-    value: 'shahariar@example.com',
+    value: 'dev.shahariar.official@gmail.com',
   },
   {
     label: 'Phone',
-    value: '+880 1XXX-XXXXXX',
+    value: '+880 1410-270766',
   },
 ]
 
