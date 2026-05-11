@@ -2,7 +2,7 @@ import SeoHead from '@Component/SeoHead'
 
 const experienceItems = [
     {
-        title: "Team Lead",
+        title: "React Developer",
         company: "Kodezen",
         period: "Dec 2024 - Present",
         points: [
@@ -16,8 +16,19 @@ const experienceItems = [
         company: "Full-Stack Project",
         period: "Project",
         points: [
+            "Track every expense effortlessly with each transaction, making it easy to manage and monitor your spending. Generate clear monthly reports and analyze your finances with detailed, category-wise breakdowns for better financial control.",
             "Built a MERN application for tracking expenses with structured data handling, reusable UI components, and practical dashboard flows.",
             "Optimized the app experience around clear inputs, readable summaries, and reliable CRUD behavior."
+        ]
+    },
+    {
+        title: "E-commerce system",
+        company: "Full-Stack Project",
+        period: "Project",
+        points: [
+            "Developed a full-featured e-commerce platform with product listing, search, filtering, and category-based navigation for a seamless shopping experience.",
+            "Implemented secure user authentication, cart management, and order processing using the MERN stack with efficient state and API handling.",
+            "Built an admin dashboard to manage products, orders, and users, with optimized CRUD operations and responsive UI for smooth performance."
         ]
     },
     {
@@ -25,6 +36,7 @@ const experienceItems = [
         company: "Utility Project",
         period: "Project",
         points: [
+            "Fetch api from rapid api on real time data",
             "Developed a focused download utility with attention to usability, API handling, and efficient frontend feedback states."
         ]
     }
@@ -54,7 +66,8 @@ export const About = () => {
                 <h2>About Me</h2>
                 <div className='st-portfolio--about__paragraph'>
                     <p>
-                        I'm a solution-oriented Full-Stack Developer specializing in the MERN stack and WordPress, with a strong focus on clean code, scalable architecture, and practical problem-solving. Currently working as a Team Lead at a software firm, I help guide development on a CRM plugin while balancing hands-on coding, team coordination, and product thinking. I enjoy turning complex requirements into smooth, maintainable web experiences using React.js, Next.js, Node.js, MongoDB, Tailwind CSS, and modern AI-assisted workflows.
+                        I build scalable, high-performance web solutions with a strong emphasis on efficiency and clean architecture. As a MERN Stack specialist and WordPress expert, I guide a development team, driving both technical direction and delivery.
+                        <br /> Beyond coding, I design and architect full-stack systems using Next.js, MongoDB, and Tailwind CSS, while integrating AI-driven workflows to improve productivity and innovation. From system design to sprint execution, I focus on delivering reliable, maintainable, and high-impact digital products.
                     </p>
                 </div>
             </section>
