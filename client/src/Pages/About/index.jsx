@@ -1,12 +1,44 @@
 import SeoHead from '@Component/SeoHead'
 
-const softSkills = [
-    "Clear communication",
-    "Problem solving",
-    "Team collaboration",
-    "Adaptability",
-    "Attention to detail",
-    "Time management"
+const experienceItems = [
+    {
+        title: "Team Lead",
+        company: "Kodezen",
+        period: "Dec 2024 - Present",
+        points: [
+            "Led development on a CRM plugin, coordinating implementation decisions and keeping the team focused on practical, maintainable delivery.",
+            "Architected React-driven interfaces and optimized frontend workflows for cleaner state, smoother interactions, and better long-term scalability.",
+            "Managed task breakdowns, reviewed code quality, and supported developers through technical blockers."
+        ]
+    },
+    {
+        title: "MERN Expense Tracker",
+        company: "Full-Stack Project",
+        period: "Project",
+        points: [
+            "Built a MERN application for tracking expenses with structured data handling, reusable UI components, and practical dashboard flows.",
+            "Optimized the app experience around clear inputs, readable summaries, and reliable CRUD behavior."
+        ]
+    },
+    {
+        title: "YouTube Video Downloader",
+        company: "Utility Project",
+        period: "Project",
+        points: [
+            "Developed a focused download utility with attention to usability, API handling, and efficient frontend feedback states."
+        ]
+    }
+]
+
+const educationItems = [
+    {
+        degree: "B.Sc. in Computer Science & Engineering",
+        status: "Currently pursuing"
+    },
+    {
+        degree: "Diploma in Computer Engineering",
+        status: "Completed"
+    }
 ]
 
 export const About = () => {
@@ -14,56 +46,56 @@ export const About = () => {
         <div className='st-portfolio--about'>
             <SeoHead
                 title="About"
-                description="React developer with real experience at Kodezen, practical frontend skills, soft skills, and education background."
+                description="Full-stack developer specializing in MERN stack, WordPress, clean code, leadership, and solution-oriented web development."
             />
 
             <section className="st-portfolio--about__section st-portfolio--about__intro">
-                <p className="st-portfolio--about__eyebrow">Section 1</p>
+                <p className="st-portfolio--about__eyebrow">Profile</p>
                 <h2>About Me</h2>
                 <div className='st-portfolio--about__paragraph'>
                     <p>
-                        I'm a React developer focused on building clean, responsive, and practical web interfaces. I enjoy turning ideas into usable products with component-based architecture, thoughtful UI details, and reliable frontend logic.
-                    </p>
-                    <p>
-                        My work is centered around React, JavaScript, Redux, API integration, and modern styling workflows. I care about writing maintainable code, improving user experience, and learning tools deeply enough to use them with confidence in real projects.
+                        I'm a solution-oriented Full-Stack Developer specializing in the MERN stack and WordPress, with a strong focus on clean code, scalable architecture, and practical problem-solving. Currently working as a Team Lead at a software firm, I help guide development on a CRM plugin while balancing hands-on coding, team coordination, and product thinking. I enjoy turning complex requirements into smooth, maintainable web experiences using React.js, Next.js, Node.js, MongoDB, Tailwind CSS, and modern AI-assisted workflows.
                     </p>
                 </div>
             </section>
 
             <section className="st-portfolio--about__section">
                 <div className="st-portfolio--about__section-head">
-                    <p className="st-portfolio--about__eyebrow">Section 2</p>
+                    <p className="st-portfolio--about__eyebrow">Timeline</p>
                     <h2>Real Experience</h2>
                 </div>
-                <div className="st-portfolio--about__experience">
-                    <div>
-                        <h3>Kodezen</h3>
-                        <p>React Developer</p>
-                    </div>
-                    <span>Dec 2024 - Present</span>
-                </div>
-            </section>
-
-            <section className="st-portfolio--about__section">
-                <div className="st-portfolio--about__section-head">
-                    <p className="st-portfolio--about__eyebrow">Section 3</p>
-                    <h2>Soft Skills</h2>
-                </div>
-                <div className="st-portfolio--about__skills">
-                    {softSkills.map((skill) => (
-                        <span key={skill}>{skill}</span>
+                <div className="st-portfolio--about__timeline">
+                    {experienceItems.map((item) => (
+                        <article className="st-portfolio--about__experience" key={item.title}>
+                            <div className="st-portfolio--about__experience-head">
+                                <div>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.company}</p>
+                                </div>
+                                <span>{item.period}</span>
+                            </div>
+                            <ul>
+                                {item.points.map((point) => (
+                                    <li key={point}>{point}</li>
+                                ))}
+                            </ul>
+                        </article>
                     ))}
                 </div>
             </section>
 
             <section className="st-portfolio--about__section">
                 <div className="st-portfolio--about__section-head">
-                    <p className="st-portfolio--about__eyebrow">Section 4</p>
+                    <p className="st-portfolio--about__eyebrow">Background</p>
                     <h2>Education</h2>
                 </div>
-                <div className="st-portfolio--about__education">
-                    <h3>Academic Background</h3>
-                    <p>Focused on continuous learning, frontend development, and practical web application skills.</p>
+                <div className="st-portfolio--about__education-list">
+                    {educationItems.map((item) => (
+                        <div className="st-portfolio--about__education" key={item.degree}>
+                            <h3>{item.degree}</h3>
+                            <p>{item.status}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
         </div>

@@ -78,50 +78,71 @@
             color: var(--text-secondary);
         }
 
-        &__experience,
-        &__education {
-            border-left: 3px solid var(--color-primary);
-            padding-left: 16px;
+        &__timeline,
+        &__education-list {
+            display: grid;
+            gap: 16px;
         }
 
-        &__experience {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 18px;
+        &__experience,
+        &__education {
+            position: relative;
+            display: grid;
+            gap: 10px;
+            border-left: 3px solid var(--color-primary);
+            padding-left: 18px;
 
-            p,
-            span {
+            &::before {
+                position: absolute;
+                top: 6px;
+                left: -7px;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background: var(--color-primary);
+                box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-primary) 14%, transparent);
+                content: "";
+            }
+
+            p {
                 color: var(--text-secondary);
                 font-size: 14px;
                 font-weight: 700;
                 line-height: 1.5;
             }
+        }
+
+        &__experience-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 18px;
 
             span {
+                color: var(--text-secondary);
+                font-size: 13px;
+                font-weight: 800;
+                line-height: 1.5;
                 white-space: nowrap;
             }
         }
 
-        &__skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        &__experience ul {
+            display: grid;
+            gap: 8px;
+            margin: 0;
+            padding-left: 18px;
+            color: var(--text-secondary);
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.7;
+        }
 
-            span {
-                padding: 9px 12px;
-                border: 1px solid var(--border-color);
-                border-radius: 999px;
-                background: var(--surface-muted);
-                color: var(--text-primary);
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 1;
-            }
+        &__experience li::marker {
+            color: var(--color-primary);
         }
 
         &__education {
-            display: grid;
             gap: 6px;
 
             p {
@@ -140,7 +161,7 @@
             padding: 16px;
             gap: 18px;
 
-            &__experience {
+            &__experience-head {
                 display: grid;
                 gap: 8px;
 
