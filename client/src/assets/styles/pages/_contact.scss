@@ -74,6 +74,89 @@
     }
 }
 
+.st-contact-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-card);
+
+    > div:first-child {
+        min-width: 0;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--text-secondary);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    strong {
+        display: block;
+        color: var(--text-primary);
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+.st-contact-social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 40px;
+        padding: 0 12px;
+        border-radius: 8px;
+        color: var(--text-primary);
+        background: var(--surface-muted);
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1;
+        text-decoration: none;
+        transition:
+            transform 0.2s ease,
+            color 0.2s ease,
+            border-color 0.2s ease,
+            background 0.2s ease;
+
+        i {
+            font-size: 18px;
+        }
+
+        span {
+            margin: 0;
+            color: inherit;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+
+        &:hover,
+        &:focus-visible {
+            transform: translateY(-2px);
+            color: var(--color-primary);
+            background: var(--surface);
+            border-color: var(--color-primary);
+            outline: none;
+        }
+    }
+}
+
 .st-contact-map {
     overflow: hidden;
     border-radius: 8px;
@@ -94,6 +177,8 @@
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    flex-direction: column;
+    gap: 24px;
 
     .st-form-wrapper {
         width: 100%;
@@ -169,6 +254,20 @@
 @media (max-width: 560px) {
     .st-contact-info-list {
         grid-template-columns: 1fr;
+    }
+
+    .st-contact-social {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .st-contact-social-links {
+        justify-content: flex-start;
+
+        a {
+            flex: 1 1 120px;
+            justify-content: center;
+        }
     }
 
     .st-form-wrapper {

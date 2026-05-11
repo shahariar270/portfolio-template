@@ -22,6 +22,29 @@ const contactInfo = [
   },
 ]
 
+const socialLinks = [
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/shahariar270/',
+    icon: 'st-icon--linkedin',
+  },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/shahariar270',
+    icon: 'st-icon--github',
+  },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/shahariar270/',
+    icon: 'st-icon--facebook',
+  },
+  // {
+  //   label: 'X(twitter)',
+  //   href: 'https://x.com/shahariar_codes',
+  //   icon: 'st-icon--twitter',
+  // },
+]
+
 export const Contact = () => {
   const handleSubmit = async (values, { resetForm }) => {
     try {
@@ -117,6 +140,27 @@ export const Contact = () => {
               />
             </Form>
           </Formik>
+          <div className="st-contact-social">
+            <div>
+              <span>Social Media</span>
+              <strong>Connect with me online</strong>
+            </div>
+            <div className="st-contact-social-links">
+              {socialLinks.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.label}
+                  title={item.label}
+                >
+                  <i className={item.icon}></i>
+                  <span>{item.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
