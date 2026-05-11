@@ -28,7 +28,8 @@ export const Skill = () => {
               <SkillCard
                 key={i}
                 front={card.front}
-                icon={card.icon}
+                badge={card.badge}
+                logo={card.logo}
                 back={card.back}
                 categoryId={category.id}
               />
