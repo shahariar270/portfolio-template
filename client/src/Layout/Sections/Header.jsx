@@ -13,13 +13,13 @@ export const Header = () => {
                 <h3>{currentPath ? currentPath.label : 'Home'}</h3>
             </div>
 
-            <div className="st-portfolio--news-slider" aria-label="Latest news">
+            {/* <div className="st-portfolio--news-slider" aria-label="Latest news">
                 <div className="st-portfolio--news-track">
                     <span>justices for hadi,</span>
                     <span>Free Palestine 🇵🇸  </span>
                     <span>আমি আমার শত্রুর সাথেও ইনসাফ করতে চাই</span>
                 </div>
-            </div>
+            </div> */}
 
             <div className="st-portfolio--menu">
                 {menuArray.map((item, index) => (
