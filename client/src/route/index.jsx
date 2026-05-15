@@ -7,6 +7,7 @@ import { Contact } from "@Pages/Contact";
 import Home from "@Pages/Home";
 import { Project } from "@Pages/Project";
 import { Skill } from "@Pages/Skill";
+import { NotFound } from "@Pages/NotFound";
 import { createBrowserRouter } from "react-router-dom";
 
 
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
                 path:'/contact',
                 element:<Contact/>
             },
+            {
+                path: '*',
+                element: <NotFound />
+            }
         ]
     }
 ])
