@@ -2,7 +2,7 @@ import Button from '@Component/Button'
 import { Field, Form, Formik } from 'formik'
 import React from 'react'
 
-export const Contact = () => {
+export const Contact = () => { 
   const handleSubmit = async (values, { resetForm }) => {
     try {
       const response = await fetch("http://localhost:3000/contact", {
@@ -10,7 +10,7 @@ export const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
       })
-      const data = await response.json();
+      const data = await response.json(); 
 
       if (data.success) {
         alert("Message sent successfully!");
